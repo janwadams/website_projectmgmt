@@ -1,0 +1,128 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Background Image */
+.background-container {
+    background: url('classic2.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Membership Form Container */
+.membership-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    width: 350px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Form Title */
+.membership-container h2 {
+    font-size: 22px;
+    color: #d90000;
+    margin-bottom: 10px;
+}
+
+/* Input Group */
+.input-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Input Fields */
+.input-icon {
+    position: relative;
+}
+
+.input-icon input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding-left: 35px;
+}
+
+.input-icon .icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Password Wrapper */
+.password-wrapper {
+    position: relative;
+}
+
+.password-wrapper input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding-right: 35px;
+}
+
+.password-wrapper .toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+/* Password Strength Indicator */
+#password-strength {
+    font-size: 12px;
+    color: gray;
+}
+
+/* Buttons */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.submit-btn {
+    background: #d90000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 48%;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background: #a80000;
+}
+
+.cancel-btn {
+    background: gray;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 48%;
+    transition: 0.3s;
+}
+
+.cancel-btn:hover {
+    background: #555;
+}
