@@ -39,7 +39,7 @@ nav {
 .parallax-section {
     position: relative;
     height: 100vh;
-    background-image: url('images/classic1.jpg'); /* Ensure the image is in the correct folder */
+    background-image: url('classic1.jpg'); /* Ensure the image is in the correct folder */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -727,3 +727,314 @@ footer {
 }
 
 
+
+
+
+
+
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+    width: 100%;
+    overflow-x: hidden; /* Prevents horizontal scroll */
+}
+
+/* Responsive Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* Mobile Navigation */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Membership Form */
+.membership-container {
+    max-width: 450px;
+    margin: 50px auto;
+    padding: 25px;
+    background: #f9f9f9;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Responsive Form */
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Make input fields fully responsive */
+.input-group input {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Adjust password field layout */
+.password-wrapper {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+}
+
+.password-wrapper input {
+    flex: 1;
+    padding-right: 40px;
+}
+
+/* Button Styling */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.submit-btn {
+    background: #e60000;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    width: 48%;
+}
+
+.submit-btn:hover {
+    background: #cc0000;
+}
+
+/* 🏆 Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .membership-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .input-group input, .password-wrapper {
+        width: 100%;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    .submit-btn, .cancel-btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/* Responsive Gallery */
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.gallery-container img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: black;
+    color: white;
+    font-size: 14px;
+}
+
+
+
+
+
+/* Adjust the navigation bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+/* Center the nav links while keeping the logo on the left */
+.nav-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center; /* Centers the navigation links */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links li a:hover {
+    color: #e60000;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-container {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+
+
+
+
+/* Logo Styling */
+.logo {
+    max-height: 80px; /* Adjust this value to resize */
+    width: auto; /* Maintain aspect ratio */
+    display: block;
+    margin-left: 0; /* Adjust spacing from the left */
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Center the Navigation Links */
+.nav-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .logo {
+        max-height: 60px; /* Smaller logo for mobile */
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-container {
+        width: 100%;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
