@@ -39,7 +39,7 @@ nav {
 .parallax-section {
     position: relative;
     height: 100vh;
-    background-image: url('classic1.jpg'); /* Ensure the image is in the correct folder */
+    background-image: url('images/classic1.jpg'); /* Ensure the image is in the correct folder */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
